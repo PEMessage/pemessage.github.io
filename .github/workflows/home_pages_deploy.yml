@@ -3,7 +3,7 @@
 # <https://github.com/artxia/Action-NotionSite.git>
 #
 
-name: Deploy to Pages
+name: Deploy to Pages ( Only Home Page )
 
 on:
 #  schedule:
@@ -41,7 +41,7 @@ jobs:
         run: |
           cd ${GITHUB_WORKSPACE}/loconotion
           pip install -r requirements.txt
-          python loconotion example/example_site.toml --non-rename > test.log 2>&1
+          python loconotion example/example_site.toml --non-rename --single-page > test.log 2>&1
 
       - name: Deploy to Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
