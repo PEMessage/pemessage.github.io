@@ -33,9 +33,9 @@ jobs:
 
       - name: Configuration File
         run: |
-          cat >  ${GITHUB_WORKSPACE}/loconotion/example/example_site.toml  << EOF
-          ${{ secrets.SITE_CONFIG }}
-          EOF
+          #cat >  ${GITHUB_WORKSPACE}/loconotion/example/example_site.toml  << EOF
+          # ${{ secrets.SITE_CONFIG }}
+          # EOF
 
       - name: Install and Run
         run: |
