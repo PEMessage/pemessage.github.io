@@ -31,8 +31,8 @@ jobs:
         with:
           python-version: 3.8
 
-      - name: Configuration File
-        run: |
+      #- name: Configuration File
+      #  run: |
           #cat >  ${GITHUB_WORKSPACE}/loconotion/example/example_site.toml  << EOF
           # ${{ secrets.SITE_CONFIG }}
           # EOF
